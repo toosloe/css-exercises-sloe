@@ -16,4 +16,15 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition:
+    scale 1s,
+    background 1s;
+}
+
+button:hover{
+  scale:2;
+}
+
+button:active {
+  background: red;
 }

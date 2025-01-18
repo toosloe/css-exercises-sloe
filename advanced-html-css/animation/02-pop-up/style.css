@@ -24,6 +24,7 @@ button {
   border: none;
   border-radius: 5px;
   font-weight: 600;
+  
 }
 
 .popup-modal {
@@ -35,10 +36,11 @@ button {
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -120%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .popup-modal p {
@@ -54,6 +56,7 @@ button {
 }
 
 .popup-modal.show {
+  transform: translate(-50%, -70%);
   opacity: 100%;
   pointer-events: all;
 }
