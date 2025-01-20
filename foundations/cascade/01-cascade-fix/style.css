@@ -24,10 +24,15 @@ body {
 } 
 
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 20px;
+  border: 1px solid black;
 }
+
+.cancel {
+  background-color: rgb(255, 255, 255);
+  color: black;
+} 
 
 .child {
   color: rgb(0, 0, 0);
