@@ -1,0 +1,18 @@
+
+.one{
+    background-color: black;
+    color: aliceblue;
+}
+
+.two{
+    background-color: yellow;
+}
+
+button{
+    padding: 10px;
+    font-size: xx-large;
+}
+
+button:active{
+    font-weight: bolder;
+}

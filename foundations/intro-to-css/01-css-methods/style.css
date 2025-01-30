@@ -1,0 +1,10 @@
+
+.ext{
+    background-color: red;
+    color: aliceblue;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

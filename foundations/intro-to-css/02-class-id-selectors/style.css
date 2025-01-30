@@ -1,0 +1,26 @@
+
+
+.one{
+    background-color: pink;
+}
+
+#two{
+    color: blue;
+    font-size: xx-large;
+}
+
+.three{
+    background-color: pink;
+    font-size: xx-large;
+}
+
+#four{
+    background-color: lightgreen;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.five{
+    background-color: pink;
+    font-size: large;
+}
