@@ -1,14 +1,17 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  gap: 5px;
 }
 
 .container {
   text-align: center;
+  display: grid;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
-  padding: 15px;
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
@@ -17,15 +20,43 @@
 
 .header {
   background-color: #393f4d;
+  /*grid-area: 1 / 1 / 1 / 5; */
+  grid-column: 1 / -1;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+  height: 10vh;
+  min-height: auto;
+  padding-left: 5px;
+}
+
+.menu{
+   align-self: center; 
+
+}
+
+.menu ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style: none;
+}
+
+.logo {
+  justify-self: start;
 }
 
 .sidebar {
   background-color: #C50208;
+  padding: 10px;
+  display: grid;
+  /*grid-area: 2 / 1 / 5 / 2;*/
+  grid-row: 2/4;
+  gap: 10px;
 }
 
 .sidebar .photo {
@@ -34,6 +65,9 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
+  height: 150px;
+  min-height: auto;
+  align-content: center;
 }
 
 
@@ -42,23 +76,45 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  height: 150px;
+  min-height: auto;
+  align-content: center;
 }
 
 .nav {
   background-color: #C50208;
+  /*grid-area: 2/ 2 / 2 / 2;*/
+  grid-column: 2 / 2;
+  align-content: center;
+  height: 6vh;
+  min-height: auto;
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
 }
+
+.nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 .article {
   background-color: #bccbde;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /*grid-area: 3 / 2 / 3 / 2;*/
+  grid-column: 2 / 2;
 }
 
 .article p {
-  font-size: 18px;
+  font-size: 12px;
   font-family: sans-serif;
   color: white;
   text-align: left;
@@ -68,6 +124,10 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  white-space: normal;
+  padding: 15px;
+  height: 200px;
+  min-height: auto;
 }
 
 .card p {
@@ -83,9 +143,25 @@
 
 .footer {
   background-color: #393f4d;
+  /*grid-area:4 / 1 / -1 / -1;*/
+  grid-column: 1 / -1;
+  height: 6vh;
+  align-content: center;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+
+}
+
+
+a:hover, .photo:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:active, .photo:active{
+  color: rgba(228,228,228,0.5);
+  cursor: grabbing;
 }
